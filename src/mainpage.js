@@ -21,21 +21,48 @@ const createNav = ()=>{
     return nav;
 }
 
+// Button set to active
+const setActiveButton = () => {
+ const buttons = document.querySelectorAll('nav-button');
+
+ buttons.forEach((button) =>{
+    if(button !==  this){
+        button.classList.remove('active');
+    } else {
+        button.classList.add('active');
+    }
+ });
+ 
+}
+setActiveButton();
 //creating header function
 const createHeader = () => {
  const header = document.createElement('header');
  header.classList.add('header');
 
+ const stickyHeader= header.offsetTop;
+ if (window.pageYOffset > stickyHeader){
+    header.classList.add('stickyHeader');
+ }else{
+    header.classList.remove('stickyHeader');
+ }
+
  const restaurantName = document.createElement('h1');
- restaurantName.classList.add('restaurant-page');
+ restaurantName.classList.add('restaurantName');
  restaurantName.textContent = 'African Delicacy';
  
+ const restaurantMottor = document.createElement('p')
+ restaurantMottor.classList.add('restaurantMottor');
+ restaurantMottor.textContent='Good food favours the hungry heart';
+ 
  header.appendChild(restaurantName);
+ header.appendChild(restaurantMottor);
  header.appendChild(createNav());
 
  return header;
 }
 
+window.onscroll = function() {createHeader()};
 // creating main body function
 const createMain = () =>{
     const main = document.createElement('main');

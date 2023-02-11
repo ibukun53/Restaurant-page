@@ -1,3 +1,42 @@
 .header {
-    background-color: red;
-  }
+  padding: 10px 16px;
+  background: 	rgb(51, 0, 0);
+  padding-top: 30px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.restaurantName {
+  color: #f1f1f1;
+  font-weight: 700;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.restaurantMottor {
+  font-size: 15px;
+  color: #f1f1f1;
+}
+
+.nav-button{
+  font-size: 16px;
+  color: black;
+  border: solid rgb(51, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-button:hover{
+  background-color: rgb(51, 0, 0);
+}
+.nav-button .active{
+opacity: 4px;
+}
