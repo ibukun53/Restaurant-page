@@ -23,11 +23,35 @@ const createNav = ()=>{
     orderButton.classList.add('nav-button');
     orderButton.textContent = 'Order';
     
+
+    const mobileMenu = document.createElement('div');
+    mobileMenu.classList.add('mobileMenu');
+    const spanbar1 = document.createElement('span');
+    spanbar1.classList.add('bar');
+    const spanbar2 = document.createElement('span');
+    spanbar2.classList.add('bar');
+    const spanbar3 = document.createElement('span');
+    spanbar3.classList.add('bar');
+
+    mobileMenu.appendChild(spanbar1);
+    mobileMenu.appendChild(spanbar2);
+    mobileMenu.appendChild(spanbar3);
+    nav.appendChild(mobileMenu);
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
     nav.appendChild(orderButton);
     nav.appendChild(aboutButton);
     nav.appendChild(contactButton);
+
+      // displaying of mobile view
+    const navbarContainer = () =>{
+    nav.classList.toggle('is-active');
+    mobileMenu.classList.toggle('active');
+    };
+    nav.addEventListener('click', navbarContainer);
+    mobileMenu.addEventListener('click', navbarContainer)
+
+
     return nav;
 }
 
@@ -45,6 +69,9 @@ const setActiveButton = () => {
  
 }
 setActiveButton();
+
+
+
 //creating header function
 const createHeader = () => {
  const header = document.createElement('header');
@@ -69,6 +96,7 @@ const createHeader = () => {
  restaurantReserve.classList.add('restaurantReserve');
  restaurantReserve.textContent='Reservation';
  
+
  header.appendChild(restaurantName);
  restaurantName.appendChild(restaurantMottor);
  header.appendChild(createNav());

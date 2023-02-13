@@ -66,3 +66,47 @@ body{
 .nav-button .active{
 opacity: 4px;
 }
+
+@media only screen and (max-width : 600px){
+
+.mobileMenu {
+  /* margin-left: 40%;*/
+  position: absolute;
+  margin-top: 20px;
+  cursor: pointer;
+  transform: translate(5%, 20%);
+}
+
+.mobileMenu .bar{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background: #000;
+  cursor: pointer;
+  display: block;
+  right: 5%;
+}
+.nav-button {
+  display: none;
+}
+
+.nav.is-active{
+  position: fixed;
+}
+.nav.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav.is-active .nav-button {
+  display: block;
+}
+
+}
