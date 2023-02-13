@@ -1,10 +1,15 @@
 // creating nav function element
 const createNav = ()=>{
     const nav= document.createElement('nav');
+    nav.classList.add('nav');
 
     const homeButton = document.createElement('button');
     homeButton.classList.add('nav-button');
     homeButton.textContent = 'Home';
+
+    const aboutButton = document.createElement('button');
+    aboutButton.classList.add('nav-button');
+    aboutButton.textContent = 'About';
 
     const menuButton = document.createElement('button');
     menuButton.classList.add('nav-button');
@@ -13,11 +18,16 @@ const createNav = ()=>{
     const contactButton = document.createElement('button');
     contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
+
+    const orderButton = document.createElement('button');
+    orderButton.classList.add('nav-button');
+    orderButton.textContent = 'Order';
     
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
+    nav.appendChild(orderButton);
+    nav.appendChild(aboutButton);
     nav.appendChild(contactButton);
-
     return nav;
 }
 
@@ -49,15 +59,20 @@ const createHeader = () => {
 
  const restaurantName = document.createElement('h1');
  restaurantName.classList.add('restaurantName');
- restaurantName.textContent = 'African Delicacy';
+ restaurantName.textContent = 'African.D';
  
  const restaurantMottor = document.createElement('p')
  restaurantMottor.classList.add('restaurantMottor');
  restaurantMottor.textContent='Good food favours the hungry heart';
  
+ const restaurantReserve = document.createElement('h3');
+ restaurantReserve.classList.add('restaurantReserve');
+ restaurantReserve.textContent='Reservation';
+ 
  header.appendChild(restaurantName);
- header.appendChild(restaurantMottor);
+ restaurantName.appendChild(restaurantMottor);
  header.appendChild(createNav());
+ header.appendChild(restaurantReserve);
 
  return header;
 }
