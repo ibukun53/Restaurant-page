@@ -1,5 +1,8 @@
 // creating nav function element
 const createNav = ()=>{
+    const navbarContainer = document.createElement('div');
+    navbarContainer.classList.add('navbarContainer');
+
     const nav= document.createElement('nav');
     nav.classList.add('nav');
 
@@ -36,23 +39,23 @@ const createNav = ()=>{
     mobileMenu.appendChild(spanbar1);
     mobileMenu.appendChild(spanbar2);
     mobileMenu.appendChild(spanbar3);
-    nav.appendChild(mobileMenu);
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
     nav.appendChild(orderButton);
     nav.appendChild(aboutButton);
     nav.appendChild(contactButton);
-
+    navbarContainer.appendChild(mobileMenu);
+    navbarContainer.appendChild(nav);
       // displaying of mobile view
-    const navbarContainer = () =>{
-    nav.classList.toggle('is-active');
-    mobileMenu.classList.toggle('active');
+    const navbarContainers = () =>{
+    navbarContainer.classList.toggle('is-active');
+    nav.classList.toggle('active');
     };
-    nav.addEventListener('click', navbarContainer);
-    mobileMenu.addEventListener('click', navbarContainer)
+    navbarContainer.addEventListener('click', navbarContainers);
+    nav.addEventListener('click', navbarContainers)
 
 
-    return nav;
+    return navbarContainer;
 }
 
 // Button set to active

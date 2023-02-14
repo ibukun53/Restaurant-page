@@ -7,26 +7,29 @@ body{
   background: 	white;
   padding-top: 4px;
   padding-bottom: 0px;
-  text-align: center;
   display: flex;
+  height: 40px;
   flex-direction: row;
   border-radius: 5px;
 }
 
 .restaurantName {
   color: black;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -2px;
   font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .restaurantReserve {
  background-color: red;
- width: 100px;
- height: 30px;
- margin-left: 40px;
+ width: 50px;
+ height: 12px;
+ margin-left: 20%;
+ font-size: 10px;
  padding: 8px;
  border-radius: 3px;
- margin-top: 30px;
+ margin-top: 4px;
 }
 
 .stickyHeader {
@@ -36,17 +39,18 @@ body{
 }
 
 .restaurantMottor {
-  font-size: 7px;
+  font-size: 4px;
   color: black;
+  text-align: center;
 }
 
 .nav{
-  margin-left: 30%;
-  margin-top: 15px;
+  margin-left: 6px;
+  margin-top: -15px;
 }
 
 .nav-button{
-  font-size: 15px;
+  font-size: 10px;
   color: black;
   border: none;
   background-color: white;
@@ -70,42 +74,57 @@ opacity: 4px;
 @media only screen and (max-width : 600px){
 
 .mobileMenu {
-  /* margin-left: 40%;*/
-  position: absolute;
-  margin-top: 20px;
-  cursor: pointer;
-  transform: translate(5%, 20%);
+ margin-left: 90%;
+ margin-top: -2px;
+ cursor: pointer;
+transform: translate(5%, 20%);
 }
 
 .mobileMenu .bar{
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   margin: 5px auto;
+  margin-left: 70px;
   transition: all 0.3s ease;
   background: #000;
   cursor: pointer;
   display: block;
-  right: 5%;
 }
-.nav-button {
+
+.nav {  
+  width: 55%;
+  margin-top: 20px;
+  margin-left: 130px;
+  background-color: white;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   display: none;
 }
 
-.nav.is-active{
+.nav-button{
+  margin-top: 20px;
+  font-size: 15px;
+  
+}
+.restaurantReserve{
+  display: none;
+}
+
+.navbarContainer.is-active{
   position: fixed;
 }
-.nav.is-active .bar:nth-child(2) {
+.navbarContainer.is-active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.nav.is-active .bar:nth-child(1) {
+.navbarContainer.is-active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-.nav.is-active .bar:nth-child(3) {
+.navbarContainer.is-active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.nav.is-active .nav-button {
+.navbarContainer.is-active .nav {
   display: block;
 }
 
