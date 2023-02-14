@@ -1,5 +1,5 @@
 // creating nav function element
-const createNav = ()=>{
+const createNav = () => {
     const navbarContainer = document.createElement('div');
     navbarContainer.classList.add('navbarContainer');
 
@@ -46,6 +46,7 @@ const createNav = ()=>{
     nav.appendChild(contactButton);
     navbarContainer.appendChild(mobileMenu);
     navbarContainer.appendChild(nav);
+
       // displaying of mobile view
     const navbarContainers = () =>{
     navbarContainer.classList.toggle('is-active');
@@ -153,6 +154,7 @@ const StartUpPage = () => {
     content.appendChild(createHeader());
     content.appendChild(createMain());
     content.appendChild(createFooter());
+    content.appendChild(createBody());
 }
 
 export default StartUpPage;
