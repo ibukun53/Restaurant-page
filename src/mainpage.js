@@ -1,3 +1,5 @@
+import loadHome from "./home";
+
 // creating nav function element
 const createNav = () => {
     const navbarContainer = document.createElement('div');
@@ -114,16 +116,18 @@ window.onscroll = function() {createHeader()};
 const createMain = () =>{
     const main = document.createElement('main');
     main.classList.add('main');
+    main.setAttribute("id", "main");
     return main
 }
 
 
 // creating footer function  element
-const createFooter = ()=>{
-    const footer = document.createElement('footet');
+const createFooter = () => {
+    const footer = document.createElement('footer');
     footer.classList.add('footer');
 
     const copyright = document.createElement('p');
+    copyright.classList.add('footerp')
     copyright.textContent=`Copyright © ${new Date().getFullYear()} debbyblessing`
 
     const githubLink = document.createElement('a');
@@ -137,8 +141,8 @@ const createFooter = ()=>{
     linkedinLink.href = 'https://www.linkedin.com/in/ibukun53/'
 
     const linkedinIcon = document.createElement('i');
-    linkedinIcon .classList.add('fab');
-    linkedinIcon .classList.add('fa-linkedin');
+    linkedinIcon.classList.add('fab');
+    linkedinIcon.classList.add('fa-linkedin');
     
     githubLink.appendChild(githubIcon);
     linkedinLink.appendChild(linkedinIcon);
@@ -154,7 +158,8 @@ const StartUpPage = () => {
     content.appendChild(createHeader());
     content.appendChild(createMain());
     content.appendChild(createFooter());
-    content.appendChild(createBody());
+
+    loadHome();
 }
 
 export default StartUpPage;
