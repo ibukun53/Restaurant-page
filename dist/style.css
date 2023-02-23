@@ -1,13 +1,15 @@
-* {
+*{
   margin: 0;
   padding: 0;
-
 }
 
-#content {
+body {
  background: url('./images/img4.jpg');
  background-repeat: no-repeat;
- background-size: 100% 70%;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center center;
+ background-size: 100% 100%;
 }
 
 .header {
@@ -126,11 +128,12 @@ margin-left: 5px;
 
 .footer{
   background-color: #000; 
-  margin-top: 285px;
+  margin-top: 16%;
 }
 
 .footerp{
   color: white;
+  font-size: 10px;
 }
 @media screen and (max-width: 992px) {
   .nav{
@@ -148,6 +151,11 @@ margin-left: 5px;
     border-radius: 3px;
     margin-top: 4px;
     position: relative;
+  }
+
+  .footer{
+    background-color: #000; 
+    margin-top: 20%;
   }
 }
 
@@ -167,6 +175,10 @@ margin-left: 5px;
     border-radius: 3px;
     margin-top: 4px;
     position: relative;
+  }
+   footer{
+    background-color: #000; 
+    margin-top: 70%;
   }
 }
 
@@ -253,5 +265,10 @@ margin-left: 5px;
   p {
     padding-top: 2%;
     font-size: 35px;
+  }
+
+  .footer{
+    background-color: #000; 
+    margin-top: 66%;
   }
 }
