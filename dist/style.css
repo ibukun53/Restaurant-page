@@ -9,7 +9,7 @@ body {
  background-size: cover;
  background-attachment: fixed;
  background-position: center center;
- background-size: 100% 100%;
+
 }
 
 .header {
@@ -78,8 +78,8 @@ body {
 .nav-button:hover{
   background-color: rgb(51, 0, 0);
 }
-.nav-button .active{
-opacity: 4px;
+.nav-button.active {
+  border-bottom: 2px solid red;
 }
 /*home*/
 .home{
@@ -126,14 +126,51 @@ margin-left: 5px;
   margin-top: 4px;
 }
 
-.footer{
+footer{
   background-color: #000; 
-  margin-top: 16%;
+  margin-top: 12%; 
+  display: none;
 }
 
 .footerp{
   color: white;
   font-size: 10px;
+}
+ /* About page*/
+.about{
+ background-color: rgb(201, 197, 197);
+ margin: 20px;
+}
+.about-container{
+  display:flex;
+  flex-direction: row;
+}
+.about-text{
+  margin: 30px;
+margin-left: 30px;
+margin-right: 40px;
+}
+
+.about-header{
+  color: white;
+  
+}
+.about-subheader{
+  padding: 10px;
+  padding-left:0px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.about-paragraph{
+  padding-top: 6%;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.about-imgcontainer{
+  margin: 50px;
+  margin-right: 180px;
 }
 @media screen and (max-width: 992px) {
   .nav{
@@ -153,41 +190,30 @@ margin-left: 5px;
     position: relative;
   }
 
-  .footer{
+  .about-container{
+    display:flex;
+    flex-direction: row;
+  }
+  .about-text{
+    margin: 30px;
+  margin-left: 30px;
+  margin-right: 20px;
+  }
+
+  .about-imgcontainer{
+    margin: 10px;
+    margin-right: 3px;
+    margin-top:10%;
+  }
+  footer{
     background-color: #000; 
-    margin-top: 20%;
   }
 }
 
 @media screen and (max-width: 865px) {
-  .nav{
-    margin-left: 6px;
-    margin-top: -15px;
-  }
-
-  .restaurantReserve {
-    background-color: red;
-    width: 50px;
-    height: 12px;
-    margin-left: 12%;
-    font-size: 10px;
-    padding: 8px;
-    border-radius: 3px;
-    margin-top: 4px;
-    position: relative;
-  }
-   footer{
-    background-color: #000; 
-    margin-top: 70%;
-  }
-}
-
-
-@media only screen and (max-width : 600px){
   .mobileMenu {
-    margin-left: 40%;
-    
-    margin-top: -2px;
+    margin-left: 180%;
+     margin-top: -2px;
     cursor: pointer;
     transform: translate(5%, 20%);
    }
@@ -237,6 +263,89 @@ margin-left: 5px;
     margin-left: 30%;
    }
    .navbarContainer.is-active{
+     position: relative;
+    
+   }
+   .navbarContainer.is-active .bar:nth-child(2) {
+     opacity: 0;
+   }
+   
+   .navbarContainer.is-active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+   }
+   .navbarContainer.is-active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+   }
+   
+   .navbarContainer.is-active .nav {
+     display: block;
+   }
+   /* home mobile */
+   .home{
+    background-color: #aab98d;
+    width: 45%;
+    margin-top: 8%;
+    margin-left: 8%;
+    padding: 6%;
+  }
+  p {
+    padding-top: 2%;
+    font-size: 35px;
+  }
+/* About*/
+  .about-container{
+    display:flex;
+    flex-direction: column;
+  }
+  .about-text{
+    margin: 20px;
+   margin-left: 30px;
+   margin-right: 50px;
+  }
+.about-paragraph{
+  font-size: 15px;
+}
+.about-subheader{
+  padding: 10px;
+  padding-left: 0px;
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+.about-imgcontainer{
+  margin-top: 3%;
+}
+}
+
+
+@media only screen and (max-width : 600px){
+  .mobileMenu {
+    margin-left: 40%;
+     margin-top: -2px;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+   }
+   
+
+   .nav {    
+    position: static;
+    width: 340%;
+    margin-top: 20px;
+    margin-left: -110%;
+    background-color: rgb(255, 254, 254);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+     display: none;
+   }
+   
+    
+   .restaurantReserve{
+     display: none;
+   }
+
+   .navbarContainer{
+    margin-left: 30%;
+   }
+   .navbarContainer.is-active{
      position: fixed;
     
    }
@@ -266,9 +375,22 @@ margin-left: 5px;
     padding-top: 2%;
     font-size: 35px;
   }
-
-  .footer{
-    background-color: #000; 
-    margin-top: 66%;
+/* About*/
+  .about-text{
+    margin: 20px;
+   margin-left: 30px;
+   margin-right: 50px;
   }
+.about-paragraph{
+  font-size: 12px;
+}
+.about-subheader{
+  padding: 10px;
+  padding-left:0px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.about-imgcontainer{
+  margin-top: 3%;
+}
 }

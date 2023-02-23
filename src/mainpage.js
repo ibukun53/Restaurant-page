@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadAbout from "./about";
 
 // creating nav function element
 const createNav = () => {
@@ -11,10 +12,20 @@ const createNav = () => {
     const homeButton = document.createElement('button');
     homeButton.classList.add('nav-button');
     homeButton.textContent = 'Home';
+    homeButton.addEventListener('click', (e) =>{
+        if(e.target.classList.contains('active')) return;
+        setActiveButton(homeButton);
+        loadHome();
+    });
 
     const aboutButton = document.createElement('button');
     aboutButton.classList.add('nav-button');
     aboutButton.textContent = 'About';
+    aboutButton.addEventListener('click', (e) =>{
+        if(e.target.classList.contains('active')) return;
+        setActiveButton(aboutButton);
+        loadAbout();
+    });
 
     const menuButton = document.createElement('button');
     menuButton.classList.add('nav-button');
@@ -28,6 +39,11 @@ const createNav = () => {
     orderButton.classList.add('nav-button');
     orderButton.textContent = 'Order';
     
+    nav.appendChild(homeButton);
+    nav.appendChild(menuButton);
+    nav.appendChild(orderButton);
+    nav.appendChild(aboutButton);
+    nav.appendChild(contactButton);
 
     const mobileMenu = document.createElement('div');
     mobileMenu.classList.add('mobileMenu');
@@ -41,11 +57,7 @@ const createNav = () => {
     mobileMenu.appendChild(spanbar1);
     mobileMenu.appendChild(spanbar2);
     mobileMenu.appendChild(spanbar3);
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(orderButton);
-    nav.appendChild(aboutButton);
-    nav.appendChild(contactButton);
+    
     navbarContainer.appendChild(mobileMenu);
     navbarContainer.appendChild(nav);
 
@@ -62,21 +74,16 @@ const createNav = () => {
 }
 
 // Button set to active
-const setActiveButton = () => {
+const setActiveButton = (button) => {
  const buttons = document.querySelectorAll('nav-button');
 
  buttons.forEach((button) =>{
     if(button !==  this){
         button.classList.remove('active');
-    } else {
-        button.classList.add('active');
+     }
+    });
+           button.classList.add('active');
     }
- });
- 
-}
-setActiveButton();
-
-
 
 //creating header function
 const createHeader = () => {
@@ -111,7 +118,6 @@ const createHeader = () => {
  return header;
 }
 
-window.onscroll = function() {createHeader()};
 // creating main body function
 const createMain = () =>{
     const main = document.createElement('main');
@@ -159,6 +165,7 @@ const StartUpPage = () => {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
+    setActiveButton(document.querySelector(".nav-button"));
     loadHome();
 }
 
