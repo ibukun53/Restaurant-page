@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadAbout from "./about";
+import loadMenu from "./menu";
 
 // creating nav function element
 const createNav = () => {
@@ -30,7 +31,11 @@ const createNav = () => {
     const menuButton = document.createElement('button');
     menuButton.classList.add('nav-button');
     menuButton.textContent = 'Menu';
-
+    menuButton.addEventListener('click', (e) =>{
+        if(e.target.classList.contains('active')) return;
+        setActiveButton(menuButton);
+        loadMenu();
+    });
     const contactButton = document.createElement('button');
     contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
