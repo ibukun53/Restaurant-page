@@ -2,6 +2,7 @@ import loadHome from "./home";
 import loadAbout from "./about";
 import loadMenu from "./menu";
 import loadChef from "./chef";
+import loadContact from "./contact";
 
 // creating nav function element
 const createNav = () => {
@@ -40,6 +41,11 @@ const createNav = () => {
     const contactButton = document.createElement('button');
     contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
+    contactButton.addEventListener('click', (e) =>{
+        if(e.target.classList.contains('active')) return;
+        setActiveButton(contactButton);
+        loadContact();
+    });
 
     const chefButton = document.createElement('button');
     chefButton.classList.add('nav-button');
