@@ -1,6 +1,7 @@
 import loadHome from "./home";
 import loadAbout from "./about";
 import loadMenu from "./menu";
+import loadChef from "./chef";
 
 // creating nav function element
 const createNav = () => {
@@ -40,13 +41,18 @@ const createNav = () => {
     contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
 
-    const orderButton = document.createElement('button');
-    orderButton.classList.add('nav-button');
-    orderButton.textContent = 'Order';
+    const chefButton = document.createElement('button');
+    chefButton.classList.add('nav-button');
+    chefButton.textContent = 'Our Chef';
+    chefButton.addEventListener('click', (e) =>{
+        if(e.target.classList.contains('active')) return;
+        setActiveButton(chefButton);
+        loadChef();
+    });
     
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
-    nav.appendChild(orderButton);
+    nav.appendChild(chefButton);
     nav.appendChild(aboutButton);
     nav.appendChild(contactButton);
 

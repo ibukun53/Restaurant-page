@@ -210,13 +210,54 @@ margin-top: 5%;
   padding-top: 3px;
   padding-bottom: 5px;
 }
-.menu-paragraph{
+.menu-paragraph {
   font-size: 15px;
   padding-left: 30px;
  padding-right: 30px;
  padding-top: 32px;
  text-align: center;
  color: white;
+}
+
+/* Our chef*/
+.chef {
+background-color: white;
+margin: 20px;
+height: 600px;
+}
+
+.chef-title {
+  text-align: center;
+  padding: 10px;
+  font-size:20px
+}
+.chef-Container {
+ display: grid;
+ margin: 20px;
+ margin-top: 2px;
+ height: 500px;
+ grid-template-columns: auto auto auto;
+}
+
+.chef-imgContainer{
+  display: flex;
+  flex-direction: column;
+}
+.chef-image{
+  width: 90%;
+  height: 370px;
+  margin: 20px;
+}
+.chef-heading{
+   text-align: center;
+   font-size: 20px;
+   padding: 6px;
+   color: black;
+}
+.chef-paragraph {
+  color: rgb(223, 219, 219);
+   text-align: center;
+    padding: 6px;
 }
 @media screen and (max-width: 992px) {
   .nav{
@@ -317,6 +358,7 @@ margin-top: 5%;
    }
    .navbarContainer.is-active{
      position: relative;
+     z-index: 1;
     
    }
    .navbarContainer.is-active .bar:nth-child(2) {
@@ -364,6 +406,7 @@ margin-top: 5%;
   font-size: 20px;
   padding-bottom: 3px;
 }
+
 .about-imgcontainer{
   margin-left: 30px;
   margin-top: -4px;
@@ -386,6 +429,15 @@ height: 30%;
   margin-left: 11%;
   width: 80%;
   margin-top: 2%;
+}
+/* Our Chef*/
+.chef-Container {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .chef {
+  height: 1460px;
 }
 }
 @media only screen and (max-width : 600px){
