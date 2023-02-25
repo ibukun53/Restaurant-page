@@ -75,9 +75,6 @@ body {
   cursor: pointer;
 }
 
-.nav-button:hover{
-  background-color: rgb(51, 0, 0);
-}
 .nav-button.active {
   border-bottom: 2px solid red;
 }
@@ -287,6 +284,7 @@ margin-top: 5%;
    .nav {    
     position: static;
     width: 340%;
+    overflow: auto;
     margin-top: 20px;
     margin-left: -110%;
     background-color: rgb(255, 254, 254);
@@ -376,6 +374,7 @@ height: 30%;
 }
 
 /* Menu page*/
+
 .menu-imagecontainer {
   margin: 5%;
   display: flex;

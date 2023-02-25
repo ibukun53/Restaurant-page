@@ -80,7 +80,7 @@ const createNav = () => {
 
 // Button set to active
 const setActiveButton = (button) => {
- const buttons = document.querySelectorAll('nav-button');
+ const buttons = document.querySelectorAll('.nav-button');
 
  buttons.forEach((button) =>{
     if(button !==  this){
