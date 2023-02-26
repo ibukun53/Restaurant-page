@@ -57,11 +57,11 @@ const createContactDetails = () => {
 
      const contactDetailsSubmitContainer = document.createElement("div");
      contactDetailsSubmitContainer.classList.add('contact-submit-container')
-     const contactDetailsSubmit = document.createElement("input");
-     contactDetailsSubmit.type ="submit";
-     contactDetailsSubmit.value ="Send Message";
+     const contactDetailsSubmit = document.createElement("h3");
+     contactDetailsSubmit.textContent ="Send Message";
      contactDetailsSubmit.classList.add('contact-details-submit');
-     contactDetailsForm.appendChild(contactDetailsSubmit);
+     contactDetailsSubmitContainer.appendChild(contactDetailsSubmit);
+     contactDetailsForm.appendChild(contactDetailsSubmitContainer);
 
      contactDetails.appendChild(contactDetailsForm);
      return contactDetails;
@@ -92,10 +92,10 @@ const createContactInformation = () => {
     contactInformationFindUs.classList.add('contact-information-findus');
    
     const contactFindUs = document.createElement("h4");
-    contactFindUs.classList.add('contact-information-findus');
-    contactFindUs.textContent="Find Us";
+    contactFindUs.classList.add('contact-information-findusText');
+    contactFindUs.textContent="Find us";
    
-    const contactFindUsParagraph = document.createElement("h4");
+    const contactFindUsParagraph = document.createElement("p");
     contactFindUsParagraph.classList.add('contact-information-findusP');
     contactFindUsParagraph.textContent="No 9 Zone D Ori ile,Ikumapayi Olodo Ibadan Oyo State ";
     contactInformationFindUs.appendChild(contactFindUs);
@@ -106,7 +106,7 @@ const createContactInformation = () => {
     contactInformationReservation .classList.add('contact-information-reservation');
    
     const contactReservation = document.createElement("h4");
-    contactReservation.classList.add('contact-information-reservation');
+    contactReservation.classList.add('contact-information-reservationText');
     contactReservation.textContent="Reservation";
    
     const contactReservationParagraph = document.createElement("h4");
@@ -118,7 +118,7 @@ const createContactInformation = () => {
 
 
     const contactInformationContainer2 = document.createElement("div");
-    contactInformationContainer1.classList.add('contact-information-container1');
+    contactInformationContainer2.classList.add('contact-information-container2');
     
     const contactInformationHour = document.createElement("div");
     contactInformationHour.classList.add('contact-information-hour');
@@ -129,7 +129,7 @@ const createContactInformation = () => {
 
     const contactInformationHourParagraph1 = document.createElement("p");
     contactInformationHourParagraph1.classList.add('contact-information-hour-paragraph1');
-    contactInformationHourParagraph1.textContent="Monday: closed"
+    contactInformationHourParagraph1.textContent="Monday: Closed"
 
     const contactInformationHourHead1 = document.createElement("h5");
     contactInformationHourHead1.classList.add('contact-information-hour-paragraph');

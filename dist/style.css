@@ -272,27 +272,122 @@ height: 600px;
 .contact-container{
   display: flex;
   flex-direction: row;
-  background-color: aqua;
   margin: 20px;
 }
 
+.contact-location {
+ width: 70%;
+ height: 90%;
+ margin: 20px;
+}
+
 .contact-details{
-  margin: 20px;
-  background-color: rgb(0, 255, 0);
+  margin: 30px;
   margin-left: 70px
 }
 
 .contact-details-text{
- font-size: 17px;
+ font-size: 20px;
+  padding-top: 20px;
+  margin-left: 30px;
 }
 .contact-details-form{
-  background-color: rgb(224, 243, 224);
-  margin-top: 40px;
+  margin-top: 50px;
+  height: 70%;
   margin: 30px;
 }
 
-input{
+.contact-details-name, .contact-details-email{
+  width: 43%;
+  margin: 10px;
+  height: 20px;
+}
+.contact-details-subject, .contact-details-message{
+  width: 88%;
+  margin: 10px;
+  margin-top:2px;
+  height: 25px;
+}
+.contact-details-message{
+  height: 60px;
+}
 
+.contact-submit-container{
+  background-color: red;
+  margin: 2%;
+}
+
+.contact-details-submit{
+  font-size: 20px;
+  text-align: center;
+  padding: 2%;
+  background-color: red;
+   cursor: pointer;
+}
+
+.contact-information-container{
+  display: flex;
+  flex-direction: row;
+  margin:20px;
+}
+
+.contact-information-container1, .contact-information-container2{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  width: 50%
+}
+
+.contact-information-findus{
+  margin: 10px;
+  width: 30%;
+}
+
+.contact-information-reservation{
+ margin-left: 30%;
+ width: 40%;
+}
+
+.contact-information-findusText, .contact-information-reservationText{
+  font-size: 18px;
+  padding: 4px;
+  padding-bottom: 9px;
+}
+.contact-information-findusP, .contact-information-reservationP{
+  font-size: 15px;
+  padding-top: 30px;
+  color:#d9dad6;
+  padding-left: 14px;
+}
+.contact-information-reservationP{
+padding-left: 2px
+}
+.contact-information-container2{
+   margin: 8px;
+   height: 200px;
+  width: 50%;
+}
+.contact-information-hour{
+  background-color: green;
+  margin: 6px;
+  border-radius: 9px;
+}
+.contact-information-hour-title{
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.contact-information-hour-paragraph1{
+  font-size: 18px;
+  padding: 30px 40px;
+  padding-bottom: 2px;
+}
+.contact-information-hour-paragraph{
+  font-size: 20px;
+  padding: 0 40px;
+}
+.contact-information-hour-paragraph2, .contact-information-hour-paragraph3{
+  font-size: 18px;
+  padding-left: 40px;
 }
 @media screen and (max-width: 992px) {
   .nav{
@@ -473,6 +568,43 @@ height: 30%;
 
  .chef {
   height: 1460px;
+}
+/* Contact */
+
+.contact {
+ 
+  height: auto;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+.contact-location {
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  margin-left: 30px;
+ }
+
+ .contact-information-container1, .contact-information-container2 {
+  margin: 10px;
+    width: 50%;
+}
+ .contact-information-findus{
+  margin: 10px;
+}
+
+.contact-information-reservation{
+ margin-left: 30%;
+ width: 160%;
+ margin: -2%;
+ margin-top: 10px;
+}
+
+.contact-information-findusP {
+  font-size: 15px;
+  padding-left: 10px;
+
 }
 }
 @media only screen and (max-width : 600px){
