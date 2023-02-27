@@ -14,45 +14,41 @@ const createMenu= () => {
     menuImageContainer.classList.add("menu-imagecontainer");
     
     const image1 = document.createElement("img");
-    image1.src = "images/img3.jpg";
+    image1.src = "images/rice.jpg";
     image1.alt = "food";
     image1.classList.add("menu-image");
     menuImageContainer.appendChild(image1);
 
     const image2 = document.createElement("img");
-    image2.src = "images/img3.jpg";
+    image2.src = "images/img6.jpg";
     image2.alt = "food";
     image2.classList.add("menu-image");
     menuImageContainer.appendChild(image2);
 
     const image3 = document.createElement("img");
-    image3.src = "images/img3.jpg";
+    image3.src = "images/img1.jpg";
     image3.alt = "food";
     image3.classList.add("menu-image");
     menuImageContainer.appendChild(image3);
 
     const image4 = document.createElement("img");
-    image4.src = "images/img3.jpg";
+    image4.src = "images/img8.jpg";
     image4.alt = "food";
     image4.classList.add("menu-image");
     menuImageContainer.appendChild(image4);
     
     const image5 = document.createElement("img");
-    image5.src = "images/img3.jpg";
+    image5.src = "images/img9.jpg";
     image5.alt = "food";
     image5.classList.add("menu-image");
     menuImageContainer.appendChild(image5);
 
     const image6 = document.createElement("img");
-    image6.src = "images/img3.jpg";
+    image6.src = "images/img11.jpg";
     image6.alt = "food";
     image6.classList.add("menu-image");
     menuImageContainer.appendChild(image6);
 
-
-
-    
-    
     const menuTextContainer = document.createElement("div");
     menuTextContainer.classList.add("menu-textcontainer");
 

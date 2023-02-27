@@ -13,7 +13,7 @@ const createChef = () => {
     const chefImageConatiner1 = document.createElement("div");
     chefImageConatiner1.classList.add("chef-imgContainer");
     const image1 = document.createElement("img");
-    image1.src = "images/img3.jpg";
+    image1.src = "images/img14.jpg";
     image1.alt = "new catherine";
     image1.classList.add("chef-image");
 
@@ -35,7 +35,7 @@ const createChef = () => {
     const chefImageConatiner2 = document.createElement("div");
     chefImageConatiner2.classList.add("chef-imgContainer");
     const image2 = document.createElement("img");
-    image2.src = "images/img3.jpg";
+    image2.src = "images/img13.jpg";
     image2.alt = "Lindsay Perlen";
     image2.classList.add("chef-image");
 
@@ -58,7 +58,7 @@ const createChef = () => {
       const chefImageConatiner3 = document.createElement("div");
       chefImageConatiner3.classList.add("chef-imgContainer");
       const image3 = document.createElement("img");
-      image3.src = "images/img3.jpg";
+      image3.src = "images/img12.jpg";
       image3.alt = "Isabella Grace";
       image3.classList.add("chef-image");
   

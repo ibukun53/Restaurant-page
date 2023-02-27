@@ -155,7 +155,51 @@ const createContactInformation = () => {
 
     const contactInformationMore = document.createElement("div");
     contactInformationMore.classList.add('contact-information-more');
+    const contactSocialMedia = document.createElement("div");
+    contactSocialMedia.classList.add('contact-social-media');
+    const  githubIcon = document.createElement('i');
+    githubIcon.classList.add('fab');
+    githubIcon.classList.add('fa-github');
 
+    const githubLink = document.createElement('a');
+    githubLink.href = 'https://github.com/ibukun53/'
+
+    githubIcon.appendChild(githubLink);
+  
+    const linkedinIcon = document.createElement('i');
+    linkedinIcon.classList.add('fab');
+    linkedinIcon.classList.add('fa-linkedin');
+    const linkedinLink = document.createElement('a');
+    linkedinLink.href = 'https://www.linkedin.com/in/ibukun53/'
+    linkedinIcon.appendChild(linkedinLink);
+
+    const whatsappIcon = document.createElement('i');
+    whatsappIcon.classList.add('fab');
+    whatsappIcon.classList.add('fa-linkedin');
+    const whatsappLink = document.createElement('a');
+    whatsappLink.href = 'https://wa.me/2347013729933/'
+    whatsappIcon.appendChild(whatsappLink);
+
+    const facebookIcon = document.createElement('i');
+    facebookIcon.classList.add('fab');
+    facebookIcon.classList.add('fa-linkedin');
+    const facebookLink = document.createElement('a');
+    facebookLink.href = 'https://web.facebook.com/debby.blessing.1460/'
+    facebookIcon.appendChild(facebookLink);
+
+    const telegramIcon = document.createElement('i');
+    telegramIcon.classList.add('fab');
+    telegramIcon.classList.add('fa-linkedin');
+    const telegramLink = document.createElement('a');
+    telegramLink.href = 'https://t.me/debbie1234/'
+    telegramIcon.appendChild(telegramLink);
+   
+   
+    
+    contactSocialMedia.appendChild(githubIcon);
+
+    contactSocialMedia.appendChild(linkedinIcon);
+    contactInformationMore.appendChild(contactSocialMedia);
     contactInformationContainer2.appendChild(contactInformationMore )
     contactInformationContainer.appendChild(contactInformationContainer1);
     contactInformationContainer.appendChild(contactInformationContainer2);

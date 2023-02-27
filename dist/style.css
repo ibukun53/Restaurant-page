@@ -262,7 +262,7 @@ height: 600px;
 
 /* Conatct */
 .contact{
-  background-color: grey;
+  background-color: #f3efef;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -586,6 +586,11 @@ height: 30%;
   margin-left: 30px;
  }
 
+  .contact-details {
+    margin: 30px;
+    border-radius: 3px;
+    background-color: rgb(119, 119, 122);
+}
  .contact-information-container1, .contact-information-container2 {
   margin: 10px;
     width: 50%;
@@ -693,4 +698,76 @@ height: 30%;
     width: 89%;
     height: 30%;
   }
+  .contact-details {
+    margin: 30px;
+    border-radius: 3px;
+    background-color: rgb(119, 119, 122);
+}
+
+.contact-details-form {
+    height: 70%;
+    margin: 30px;
+}
+
+.contact-details-name, .contact-details-email {
+    width: 83%;
+}
+
+.contact-information-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.contact-information-container1, .contact-information-container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-information-findus {
+    margin: 10px;
+    text-align: center;
+    margin-left: 90px;
+    width: 90%;
+}
+
+.contact-information-reservation {
+    margin-left: 6px;
+    width: 160%;
+    margin-top: 10px;
+    text-align: center;
+}
+.contact-information-container2 {
+    margin: 8px;
+    height: 250px;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 12px;
+}
+
+.contact-information-hour {
+    background-color: green;
+    margin: 10px;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contact-information-hour-title {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.contact-information-hour-paragraph1 {
+    padding: 30px 60px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.contact-information-hour-paragraph {
+    padding: 0px 44px;
+    text-align: center;
+}
+.contact-information-hour-paragraph2, .contact-information-hour-paragraph3 {
+    padding-left: 5px;
+    text-align: center;
+}
 }

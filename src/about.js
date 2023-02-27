@@ -31,7 +31,7 @@ const createAbout = () => {
     aboutImage.classList.add("about-imgcontainer");
 
     const image = document.createElement("img");
-    image.src = "images/img3.jpg";
+    image.src = "images/img12.jpg";
     image.alt = "Chef";
     image.classList.add("about-image");
     aboutImage.appendChild(image);
