@@ -77,17 +77,14 @@ const createNav = () => {
     
     navbarContainer.appendChild(mobileMenu);
     navbarContainer.appendChild(nav);
+    
 
       // displaying of mobile view
     const navbarContainers = () =>{
     navbarContainer.classList.toggle('is-active');
-    nav.classList.toggle('active');
     };
     navbarContainer.addEventListener('click', navbarContainers);
-    nav.addEventListener('click', navbarContainers)
-
-
-    return navbarContainer;
+   return navbarContainer;  
 }
 
 // Button set to active

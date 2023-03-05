@@ -71,8 +71,8 @@ const createContactLocattion = () =>{
     const contactContainer = document.createElement("div");
     contactContainer.classList.add("contact-container");
     
-    const contactLocation = document.createElement("img");
-    contactLocation.src = "images/img3.jpg";
+    const contactLocation = document.createElement("iframe");
+    contactLocation.src = "https://www.google.ng/maps/place/Hollywood+Blvd,+Los+Angeles,+CA,+USA/@34.1016557,-118.3424309,16z/data=!4m6!3m5!1s0x80c2bf3b245207d5:0xae58054941bd8669!8m2!3d34.1015455!4d-118.3402566!16zL20vMDM1enBx";
     contactLocation.alt = "map";
     contactLocation.classList.add("contact-location");
     
@@ -97,7 +97,7 @@ const createContactInformation = () => {
    
     const contactFindUsParagraph = document.createElement("p");
     contactFindUsParagraph.classList.add('contact-information-findusP');
-    contactFindUsParagraph.textContent="No 9 Zone D Ori ile,Ikumapayi Olodo Ibadan Oyo State ";
+    contactFindUsParagraph.textContent="Hollywood Boulevard 42, Los Angeles, USA";
     contactInformationFindUs.appendChild(contactFindUs);
     contactInformationFindUs.appendChild(contactFindUsParagraph);
     contactInformationContainer1.appendChild(contactInformationFindUs);
