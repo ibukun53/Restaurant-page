@@ -72,7 +72,7 @@ const createContactLocattion = () =>{
     contactContainer.classList.add("contact-container");
     
     const contactLocation = document.createElement("iframe");
-    contactLocation.src = "https://www.google.ng/maps/place/Hollywood+Blvd,+Los+Angeles,+CA,+USA/@34.1016557,-118.3424309,16z/data=!4m6!3m5!1s0x80c2bf3b245207d5:0xae58054941bd8669!8m2!3d34.1015455!4d-118.3402566!16zL20vMDM1enBx";
+    contactLocation.src = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13530931.4067387!2d-111.41104510321198!3d34.10922635293042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shttps%3A%2F%2Fwww.google.ng%2Fmaps%2Fplace%2FHollywood%2BBlvd%2C%2BLos%2BAngeles%2C%2BCA%2C%2BUSA%2F%4034.1016557%2C-118.3424309%2C16z%2Fdata%3D*214m6*213m5*211s0x80c2bf3b245207d5%3A0xae58054941bd8669*218m2*213d34.1015455*214d-118.3402566*2116zL20vMDM1enBx!5e0!3m2!1sen!2sng!4v1678092306676!5m2!1sen!2sng";
     contactLocation.alt = "map";
     contactLocation.classList.add("contact-location");
     
