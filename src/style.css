@@ -1,0 +1,773 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background: url('./images/img4.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center center;
+
+}
+
+.header {
+  padding: 10px 16px;
+  background: 	white;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  display: flex;
+  height: 40px; 
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.restaurantName {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -2px;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.restaurantReserve {
+ background-color: red;
+ width: 50px;
+ height: 12px;
+ margin-left: 35%;
+ font-size: 10px;
+ padding: 8px;
+ position: relative;
+ border-radius: 3px;
+ margin-top: 4px;
+}
+
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.restaurantMottor {
+  font-size: 4px;
+  color: black;
+  text-align: center;
+}
+
+.nav{
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.nav-button{
+  font-size: 10px;
+  color: black;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 60px;
+  padding: 4px 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-button.active {
+  border-bottom: 2px solid red;
+}
+/*home*/
+.home{
+  background-color: #eaece5;
+  width: 30%;
+  margin-top: 8%;
+  margin-left: 8%;
+  padding: 4%;
+}
+
+h4 {
+  font-size: 10px;
+  margin-bottom: -30px;
+  margin-left: 10px;
+}
+
+p {
+  padding-top: 2%;
+  font-size: 35px;
+}
+.homespan{
+  display: flex;
+  margin-bottom: -30px;
+  width: 100%;
+  height: 30px;
+}
+
+.homebar {
+background-color: red;
+width: 30px;
+height: 7px;
+margin-left: 5px;
+}
+
+.home-restaurantReserve{
+  background-color: red;
+  width: 50px;
+  height: 12px;
+  margin-left: 1%;
+  font-size: 10px;
+  padding: 8px;
+  position: relative;
+  border-radius: 3px;
+  margin-top: 4px;
+}
+
+footer{
+  background-color: #000; 
+  margin-top: 12%; 
+  display: none;
+}
+
+.footerp{
+  color: white;
+  font-size: 10px;
+}
+ /* About page*/
+.about{
+ background-color: white;
+ margin: 20px;
+}
+.about-container{
+  display:flex;
+  flex-direction: row;
+}
+.about-text{
+  margin: 30px;
+margin-left: 30px;
+margin-right: 0px;
+}
+
+.about-header{
+  color: rgb(223, 219, 219);
+  
+}
+.about-subheader{
+  padding: 10px;
+  padding-left:0px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.about-paragraph{
+  padding-top: 6%;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.about-imgcontainer{
+  margin: 20px;
+margin-top: 5%;
+}
+.about-image{
+  width: 320px;
+  height:350px;
+}
+/*Menu page*/
+
+.menu-title{
+  text-align: center;
+  background-color: white;
+}
+.menu{
+  display: grid;
+}
+
+.menu-container{
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-imagecontainer{
+  margin: 5%;
+}
+
+.menu-image{
+  height: 60%;
+  margin-left: 25px;
+  width: 30%;
+}
+
+.menu-textcontainer{
+  margin: 5%;
+}
+.menu-head{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+.menu-paragraph {
+  font-size: 15px;
+  padding-left: 30px;
+ padding-right: 30px;
+ padding-top: 32px;
+ text-align: center;
+ color: white;
+}
+
+/* Our chef*/
+.chef {
+background-color: white;
+margin: 20px;
+height: 600px;
+}
+
+.chef-title {
+  text-align: center;
+  padding: 10px;
+  font-size:20px
+}
+.chef-Container {
+ display: grid;
+ margin: 20px;
+ margin-top: 2px;
+ height: 500px;
+ grid-template-columns: auto auto auto;
+}
+
+.chef-imgContainer{
+  display: flex;
+  flex-direction: column;
+}
+.chef-image{
+  width: 90%;
+  height: 370px;
+  margin: 20px;
+}
+.chef-heading{
+   text-align: center;
+   font-size: 20px;
+   padding: 6px;
+   color: black;
+}
+.chef-paragraph {
+  color: rgb(223, 219, 219);
+   text-align: center;
+    padding: 6px;
+}
+
+/* Conatct */
+.contact{
+  background-color: #f3efef;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.contact-location {
+ width: 70%;
+ height: 90%;
+ margin: 20px;
+}
+
+.contact-details{
+  margin: 30px;
+  margin-left: 70px
+}
+
+.contact-details-text{
+ font-size: 20px;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.contact-details-form{
+  margin-top: 50px;
+  height: 70%;
+  margin: 30px;
+}
+
+.contact-details-name, .contact-details-email{
+  width: 43%;
+  margin: 10px;
+  height: 20px;
+}
+.contact-details-subject, .contact-details-message{
+  width: 88%;
+  margin: 10px;
+  margin-top:2px;
+  height: 25px;
+}
+.contact-details-message{
+  height: 60px;
+}
+
+.contact-submit-container{
+  background-color: red;
+  margin: 2%;
+}
+
+.contact-details-submit{
+  font-size: 20px;
+  text-align: center;
+  padding: 2%;
+  background-color: red;
+   cursor: pointer;
+}
+
+.contact-information-container{
+  display: flex;
+  flex-direction: row;
+  margin:20px;
+}
+
+.contact-information-container1, .contact-information-container2{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  width: 50%
+}
+
+.contact-information-findus{
+  margin: 10px;
+  width: 30%;
+}
+
+.contact-information-reservation{
+ margin-left: 30%;
+ width: 40%;
+}
+
+.contact-information-findusText, .contact-information-reservationText{
+  font-size: 18px;
+  padding: 4px;
+  padding-bottom: 9px;
+}
+.contact-information-findusP, .contact-information-reservationP{
+  font-size: 15px;
+  padding-top: 30px;
+  color:#d9dad6;
+  padding-left: 14px;
+}
+.contact-information-reservationP{
+padding-left: 2px
+}
+.contact-information-container2{
+   margin: 8px;
+   height: 200px;
+  width: 50%;
+}
+.contact-information-hour{
+  background-color: green;
+  margin: 6px;
+  border-radius: 9px;
+}
+.contact-information-hour-title{
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.contact-information-hour-paragraph1{
+  font-size: 18px;
+  padding: 30px 40px;
+  padding-bottom: 2px;
+}
+.contact-information-hour-paragraph{
+  font-size: 20px;
+  padding: 0 40px;
+}
+.contact-information-hour-paragraph2, .contact-information-hour-paragraph3{
+  font-size: 18px;
+  padding-left: 40px;
+}
+@media screen and (max-width: 992px) {
+  .nav{
+    margin-left: 6px;
+    margin-top: -15px;
+  }
+
+  .restaurantReserve {
+    background-color: red;
+    width: 50px;
+    height: 12px;
+    margin-left: 20%;
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .about-container{
+    display:flex;
+    flex-direction: row;
+  }
+  .about-text{
+    margin: 30px;
+  margin-left: 10px;
+
+  }
+
+  .about-imgcontainer{
+    margin: 10px;
+    margin-right: 30px;
+    margin-top:5%;
+  }
+
+  .about-image{
+   width: 320px;
+   height:350px;
+ }
+
+  footer{
+    background-color: #000; 
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .mobileMenu {
+    margin-left: 180%;
+     margin-top: -2px;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+   }
+   
+   .mobileMenu .bar{
+     width: 22px;
+     height: 2px;
+     margin: 5px auto;
+     margin-left: 100px;
+     transition: all 0.3s ease;
+     background: #000;
+     cursor: pointer;
+     display: block;
+   }
+   
+   .nav {    
+    position: static;
+    width: 340%;
+    overflow: auto;
+    margin-top: 20px;
+    margin-left: -110%;
+    background-color: rgb(255, 254, 254);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+     display: none;
+   }
+   
+     .nav-button{
+      color: black;
+      border: none;
+      background-color: white;
+      border-radius: 5px;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      font-size: 20px;
+      padding: 15px 13px;
+      text-decoration: none;
+      cursor: pointer;
+      overflow: hidden;
+   }
+
+   .restaurantReserve{
+     display: none;
+   }
+
+   .navbarContainer{
+    margin-left: 30%;
+   }
+   .navbarContainer.is-active{
+     position: relative;
+     z-index: 1;
+    
+   }
+   .navbarContainer.is-active .bar:nth-child(2) {
+     opacity: 0;
+   }
+   
+   .navbarContainer.is-active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+   }
+   .navbarContainer.is-active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+   }
+   
+   .navbarContainer.is-active .nav {
+     display: block;
+   }
+   /* home mobile */
+   .home{
+    background-color: #eaece5;
+    width: 45%;
+    margin-top: 8%;
+    margin-left: 8%;
+    padding: 6%;
+  }
+  p {
+    padding-top: 2%;
+    font-size: 35px;
+  }
+/* About*/
+  .about-container{
+    display:flex;
+    flex-direction: column;
+  }
+  .about-text{
+    margin: 20px;
+   margin-left: 30px;
+   margin-right: 50px;
+  }
+.about-paragraph{
+  font-size: 15px;
+}
+.about-subheader{
+  padding: 10px;
+  padding-left: 0px;
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+
+.about-imgcontainer{
+  margin-left: 30px;
+  margin-top: -4px;
+}
+.about-image{
+width: 89%;
+height: 30%;
+}
+
+/* Menu page*/
+
+.menu-imagecontainer {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-image {
+  height: 60%;
+  margin-left: 11%;
+  width: 80%;
+  margin-top: 2%;
+}
+/* Our Chef*/
+.chef-Container {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .chef {
+  height: 1460px;
+}
+/* Contact */
+
+.contact {
+ 
+  height: auto;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+.contact-location {
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  margin-left: 30px;
+ }
+
+  .contact-details {
+    margin: 30px;
+    border-radius: 3px;
+    background-color: rgb(119, 119, 122);
+}
+ .contact-information-container1, .contact-information-container2 {
+  margin: 10px;
+    width: 50%;
+}
+ .contact-information-findus{
+  margin: 10px;
+}
+
+.contact-information-reservation{
+ margin-left: 30%;
+ width: 160%;
+ margin: -2%;
+ margin-top: 10px;
+}
+
+.contact-information-findusP {
+  font-size: 15px;
+  padding-left: 10px;
+
+}
+}
+@media only screen and (max-width : 600px){
+  .mobileMenu {
+    margin-left: 40%;
+     margin-top: -2px;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+   }
+   
+
+   .nav {    
+    position: static;
+    width: 340%;
+    margin-top: 20px;
+    margin-left: -110%;
+    background-color: rgb(255, 254, 254);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+     display: none;
+   }
+   
+    
+   .restaurantReserve{
+     display: none;
+   }
+
+   .navbarContainer{
+    margin-left: 30%;
+   }
+   .navbarContainer.is-active{
+     position: fixed;
+    
+   }
+   .navbarContainer.is-active .bar:nth-child(2) {
+     opacity: 0;
+   }
+   
+   .navbarContainer.is-active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+   }
+   .navbarContainer.is-active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+   }
+   
+   .navbarContainer.is-active .nav {
+     display: block;
+   }
+   /* home mobile */
+   .home{
+    background-color: #eaece5;
+    width: 70%;
+    margin-top: 8%;
+    margin-left: 8%;
+    padding: 6%;
+  }
+
+  p {
+    padding-top: 2%;
+    font-size: 35px;
+  }
+/* About*/
+  .about-text {
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  .about-paragraph {
+    font-size: 12px;
+  }
+
+  .about-subheader {
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-imgcontainer {
+    margin-left: 50px;
+    margin-top: -4px;
+  }
+
+  .about-image {
+    width: 89%;
+    height: 30%;
+  }
+  .contact-details {
+    margin: 30px;
+    border-radius: 3px;
+    background-color: rgb(119, 119, 122);
+}
+
+.contact-details-form {
+    height: 70%;
+    margin: 30px;
+}
+
+.contact-details-name, .contact-details-email {
+    width: 83%;
+}
+
+.contact-information-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.contact-information-container1, .contact-information-container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-information-findus {
+    margin: 10px;
+    text-align: center;
+    margin-left: 60px;
+    width: 90%;
+}
+
+.contact-information-reservation {
+    margin-left: 6px;
+    width: 160%;
+    margin-top: 10px;
+    text-align: center;
+}
+.contact-information-container2 {
+    margin: 8px;
+    height: 250px;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 12px;
+}
+
+.contact-information-hour {
+    background-color: green;
+    margin: 10px;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contact-information-hour-title {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.contact-information-hour-paragraph1 {
+    padding: 30px 60px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.contact-information-hour-paragraph {
+    padding: 0px 44px;
+    text-align: center;
+}
+.contact-information-hour-paragraph2, .contact-information-hour-paragraph3 {
+    padding-left: 5px;
+    text-align: center;
+}
+}
